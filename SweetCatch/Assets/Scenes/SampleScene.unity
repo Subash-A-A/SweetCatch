@@ -198,8 +198,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 299d55cc36e53df49b6ea572352fab9a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  food: {fileID: 4240407417484303046, guid: 767c797fc048dad4489037b0391055ad, type: 3}
-  spawnTime: 0.85
+  food: {fileID: 9005836264322359693, guid: 767c797fc048dad4489037b0391055ad, type: 3}
+  bomb: {fileID: 8613625257793101100, guid: 760f7af267eba404191b236912de2d5e, type: 3}
+  spawnTime: 0.95
   spawnYloc: 6
 --- !u!1 &519420028
 GameObject:
@@ -237,7 +238,7 @@ Camera:
   m_Enabled: 1
   serializedVersion: 2
   m_ClearFlags: 2
-  m_BackGroundColor: {r: 1, g: 1, b: 1, a: 0}
+  m_BackGroundColor: {r: 1, g: 0.7295234, b: 0.72075474, a: 0}
   m_projectionMatrixMode: 1
   m_GateFitMode: 2
   m_FOVAxisMode: 0

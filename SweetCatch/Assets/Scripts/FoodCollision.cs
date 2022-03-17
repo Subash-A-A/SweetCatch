@@ -7,9 +7,13 @@ public class FoodCollision : MonoBehaviour
     {
         if (other.transform.tag == "Food")
         {
-            // Rigidbody2D rb = other.gameObject.GetComponent<Rigidbody2D>();
-            // rb.constraints = RigidbodyConstraints2D.FreezePositionY;
             Destroy(other.gameObject, 5f);
+        }
+
+        else if (other.transform.tag == "Bomb")
+        {
+            Debug.Log("TakeDamage");
+            Destroy(other.gameObject);
         }
     }
 }
