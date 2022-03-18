@@ -5,7 +5,9 @@ public class SpwanFood : MonoBehaviour
 {
 
     [Header("Food Types")]
-    [SerializeField] GameObject food;
+    [SerializeField] GameObject food1;
+    [SerializeField] GameObject food2;
+    [SerializeField] GameObject food3;
     [SerializeField] GameObject bomb;
 
     [Header("Spawn Parameters")]
@@ -24,7 +26,7 @@ public class SpwanFood : MonoBehaviour
 
     GameObject ChooseFood()
     {
-        GameObject[] spawnables = { food, food, bomb };
+        GameObject[] spawnables = { food1, food2, food3, bomb };
         int index = Random.Range(0, spawnables.Length);
         return spawnables[index];
     }
