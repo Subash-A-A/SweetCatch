@@ -4,10 +4,28 @@ public class DestroyFood : MonoBehaviour
 {
     [SerializeField] int layerNumber = 6;
     [SerializeField] ParticleSystem particle;
+    [SerializeField] GameObject healthManager;
+    [SerializeField] GameObject cam;
+
+    private HealthManager hm;
+    private CameraShake cs;
+
+    private void Start()
+    {
+        hm = healthManager.GetComponent<HealthManager>();
+        cs = cam.GetComponent<CameraShake>();
+    }
+
     private void OnTriggerEnter2D(Collider2D other)
     {
         if (other.gameObject.layer == layerNumber)
         {
+            if (other.gameObject.tag == "Food" || other.gameObject.tag == "BowlFood")
+            {
+                FindObjectOfType<AudioManager>().Play("Explosion");
+                hm.TakeDamage();
+                cs.ShakeCamera();
+            }
             ParticleEffects(particle, other.gameObject);
             Destroy(other.gameObject);
         }
