@@ -23,6 +23,7 @@ public class FoodCollision : MonoBehaviour
         if (other.transform.tag == "Food")
         {
             FindObjectOfType<AudioManager>().Play("Food");
+            FindObjectOfType<DestroyFood>().ParticleEffects(particle, other.gameObject);
             other.transform.tag = "BowlFood";
             sm.IncrementScore();
             Destroy(other.gameObject, 5f);
@@ -33,8 +34,7 @@ public class FoodCollision : MonoBehaviour
             FindObjectOfType<AudioManager>().Play("Explosion");
             hm.TakeDamage();
             cs.ShakeCamera();
-            DestroyFood df = other.gameObject.AddComponent<DestroyFood>();
-            df.ParticleEffects(particle, other.gameObject);
+            FindObjectOfType<DestroyFood>().ParticleEffects(particle, other.gameObject);
             Destroy(other.gameObject);
         }
     }

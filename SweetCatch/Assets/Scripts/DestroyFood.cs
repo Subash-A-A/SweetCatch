@@ -24,8 +24,12 @@ public class DestroyFood : MonoBehaviour
             {
                 FindObjectOfType<AudioManager>().Play("Explosion");
                 hm.TakeDamage();
-                cs.ShakeCamera();
             }
+            else if (other.gameObject.tag == "Bomb")
+            {
+                FindObjectOfType<AudioManager>().Play("BombDestroy");
+            }
+            cs.ShakeCamera();
             ParticleEffects(particle, other.gameObject);
             Destroy(other.gameObject);
         }

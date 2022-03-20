@@ -187,7 +187,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &174221975
 GameObject:
@@ -307,7 +307,7 @@ MonoBehaviour:
   m_MinValue: 0
   m_MaxValue: 3
   m_WholeNumbers: 0
-  m_Value: 0
+  m_Value: 3
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -345,8 +345,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0.25}
   m_AnchorMax: {x: 1, y: 0.75}
-  m_AnchoredPosition: {x: -5.0000005, y: 0}
-  m_SizeDelta: {x: -10, y: 0}
+  m_AnchoredPosition: {x: -10.000025, y: 0}
+  m_SizeDelta: {x: -19.999952, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &427096900
 MonoBehaviour:
@@ -416,7 +416,7 @@ Transform:
   m_Children:
   - {fileID: 1875243184}
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &488774178
 MonoBehaviour:
@@ -538,7 +538,7 @@ Camera:
   m_Enabled: 1
   serializedVersion: 2
   m_ClearFlags: 2
-  m_BackGroundColor: {r: 1, g: 0.7295234, b: 0.72075474, a: 0}
+  m_BackGroundColor: {r: 0.098039225, g: 0.098039225, b: 0.098039225, a: 0}
   m_projectionMatrixMode: 1
   m_GateFitMode: 2
   m_FOVAxisMode: 0
@@ -711,6 +711,11 @@ MonoBehaviour:
     volume: 1
     pitch: 1.5
     source: {fileID: 0}
+  - name: BombDestroy
+    clip: {fileID: 8300000, guid: af29622247aa54b4f99d702c532c2456, type: 3}
+    volume: 0.5
+    pitch: 2
+    source: {fileID: 0}
 --- !u!4 &679847272
 Transform:
   m_ObjectHideFlags: 0
@@ -823,7 +828,7 @@ Canvas:
   m_SortingBucketNormalizedSize: 0
   m_AdditionalShaderChannelsFlag: 0
   m_SortingLayerID: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 2
   m_TargetDisplay: 0
 --- !u!1 &1053995093
 GameObject:
@@ -920,7 +925,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
+  m_Color: {r: 1, g: 0.3803922, b: 0.3803922, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -1018,8 +1023,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 10, y: 0}
+  m_AnchoredPosition: {x: -4.9166718, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1550695587
 MonoBehaviour:
