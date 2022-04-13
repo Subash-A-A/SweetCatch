@@ -1,2 +1,2 @@
 # SweetCatch
- Collect sweets
+ Collect sweets, Avoid Bombs
