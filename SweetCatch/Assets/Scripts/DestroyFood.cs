@@ -40,6 +40,6 @@ public class DestroyFood : MonoBehaviour
         ParticleSystem.MainModule psmain = particle.main;
         psmain.startColor = target.GetComponentInChildren<SpriteRenderer>().color;
         ParticleSystem parti = Instantiate(particle, target.transform.position, Quaternion.identity);
-        Destroy(parti.gameObject, 0.5f);
+        Destroy(parti.gameObject, 0.7f);
     }
 }
